@@ -9,14 +9,14 @@ body{
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(red, yellow);
 
-    background-color:#B1624EFF;
+    background-color:#FFA351FF;
 
 }
 
 
 .bmi_calculator {
   
-    background-color: #B1624EFF;
+    background-color: #EE4E34;
     position: absolute;
     top:30%;
     left:50%;
