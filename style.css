@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(red, yellow);
+
+    background-color:#B1624EFF;
+
+}
+
+
+.bmi_calculator {
+  
+    background-color: #B1624EFF;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+    border: 2px solid rgb(70, 5, 131);
+    box-shadow: 5px 5px 5px  rgb(2, 2, 2);
+    display: inline;
+    height: 570px;
+    width: 780px;
+    margin-top: 5%;
+
+  }

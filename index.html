@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>BMI Calculator</title>
+        </head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function BMI() {
+            var h = document.getElementById("h").value;
+            var w = document.getElementById("w").value;
+            var bmi = w / (h * h) ;
+            var bmio = bmi.toFixed(2);
+    
+            if (bmi < 18.5) {
+                document.getElementById("result").innerHTML =
+                    " You are UnderWeight and Your BMI is " + bmio;
+            } else if (bmi > 18.5 && bmi < 24.9) {
+                document.getElementById("result").innerHTML =
+                    " You are Healthy and Your BMI is " + bmio;
+            } else if (bmi > 24.9 && bmi < 29.9) {
+                document.getElementById("result").innerHTML =
+                    " You are OverWeight and Your BMI is " + bmio;
+            } else {
+                document.getElementById("result").innerHTML =
+                    " You are obese and Your BMI is " + bmio;
+            }
+        }
+    </script>
+    
+    <body>
+        <div class="container-fluid bmi_calculator">
+             <div>
+            <h2 style="text-align: center; margin-bottom: 20px; color: orange;">BMI Calculator</h2>
+            <!-- <p class="text">Height</p> -->
+
+            <div class="mb-3">
+                <label for="h"  class="form-label">Enter your height (M)</label>
+                <input type="number" name="username" class="form-control" id="h" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+                <label for="w"  class="form-label">Enter your weight (Kg)</label>
+                <input type="number" name="username" class="form-control" id="w" aria-describedby="emailHelp">
+            </div>
+
+            <button id="btn" class="btn btn-success" onClick="BMI()">Calculate</button> <br>
+            <p id="result" style="margin-top: 20px;"></p>
+
+              </div>
+        </div>
+
+        
+    </body>
+</html>
